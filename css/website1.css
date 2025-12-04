@@ -1,0 +1,816 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Red Hat Text",sans-serif;
+}
+
+.bg{
+    background-color: #0049B1;
+}
+.menu{
+    padding-bottom: 10px;
+}
+
+
+.menu:hover{
+    border-bottom:4px solid #00C3FF;
+}
+.drop2{
+
+    margin-top:10px;
+}
+.drop1:hover .drop2{
+    display: block;
+}
+
+.hover-nav:hover{
+    color:#00C3FF;
+    padding-left: 25px;
+}
+
+.menu-bg{
+    background-color: #F0F6FF;
+    padding: 20px;
+}
+.num{
+    color: #FFFFFF;
+}
+
+.num:hover{
+    color: #ee0000;    
+}
+
+
+
+
+.number-1{
+    width: 50px;
+    padding: 10px 10px;
+    margin: 20px;
+    background-color: #D9F6FF;
+    border-radius: 50%;
+    color: #00C3FF;
+}
+
+.number-2{
+    width: 50px;
+    padding: 10px 10px;
+    margin: 20px;
+    background-color: #EAF3FF;
+    border-radius: 50%;
+    color: #156DE9;
+}
+
+.number-3{
+    width: 50px;
+    padding: 10px 10px;
+    margin: 20px;
+    background-color: #FFEBE6;
+    border-radius: 50%;
+    color: #FE4C1C;
+}
+
+.num-box{
+    border: none;
+    box-shadow: 8px 8px 30px 0px rgba(42,67,113,.15);
+    border-radius: 15px;
+}
+
+.number-bg-1{
+    background-image: url('number-1.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.number-bg-2{
+    background-image: url('number-2.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.number-bg-3{
+    background-image: url('number-3.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+
+@media(min-width:992px){
+    .po-rel{
+        position: relative;
+    }
+    .po-ab{
+        position: relative;
+        position: absolute;
+    }
+    
+}
+
+@media(max-width:992px){
+    .c-color{   
+        display: block;
+        margin: 25px auto;
+    }
+}
+
+@media(min-width:992px){
+    .po-1{
+        top: -40px;
+        position: absolute;
+    }
+    .po-2{
+        top: -40px;
+        left: 33.33%;
+        position: absolute;
+    }
+    .po-3{
+        top: -40px;
+        right: 0;
+        position: absolute;
+    }
+
+
+}
+
+
+.po-1:hover,.po-3:hover,.po-2:hover{
+    transform: translate(0px,-10px); /* first-left and second-bottom*/
+    transition-duration: .4s;
+}
+
+
+.mb{
+    margin-bottom: 200px;
+}
+
+.lh{
+    line-height: 30px;
+}
+
+.n-color{
+    color: #fe4c1c;
+}
+
+/* card-1 */
+.setting-1{
+    color: #00c3ff;
+    padding: 20px 0px;
+    box-shadow: 8px 8px 30px 0px #BAE7FB;
+    border-radius: 70%;
+    border: none;
+    width: 70px;
+    height: 70px;
+    margin: 20px 0px;
+    background-color: #fff;
+}
+
+.card-1{
+    padding: 25px 20px 40px 20px;
+    background-color: #e5f9ff;  
+    border-radius: 20px;  
+}
+
+.card-1:hover{
+    box-shadow: 8px 8px 30px 0px rgba(42,67,113,.15);
+    background-color: #fff;
+    transition: all .3s linear;
+}
+
+.card-1:hover .setting-1{
+    background-color: #e5f9ff;
+    box-shadow: none;
+}
+
+/* card-2 */
+.setting-2{
+    color: #1060e7;
+    padding: 17px;
+    box-shadow: 8px 8px 30px 0px #BED8FB;
+    border-radius: 50%;
+    border: none;
+    width: 70px;
+    height: 70px;
+    margin: 15px 0px;
+    background-color: #fff;
+}
+
+.card-2{
+    padding: 25px 20px 40px 20px;
+    background-color: #EAF3FF;  
+    border-radius: 20px;  
+}
+
+
+.card-2:hover{
+    box-shadow: 8px 8px 30px 0px rgba(42,67,113,.15);
+    background-color: #fff;
+    transition: all .3s linear;
+}
+
+.card-2:hover .setting-2{
+    background-color: #EAF3FF;
+    box-shadow: none;
+}
+
+/* card-3 */
+.setting-3{
+    color: #FE4C1C;
+    padding: 17px;
+    box-shadow: 8px 8px 30px 0px #FFCABC;
+    border-radius: 50%;
+    border: none;
+    width: 70px;
+    height: 70px;
+    margin: 15px 0px;
+    background-color: #fff;
+}
+
+.card-3{
+    padding: 25px 20px 40px 20px;
+    background-color: #FFEBE6;  
+    border-radius: 20px;  
+}
+
+
+.card-3:hover{
+    box-shadow: 8px 8px 30px 0px rgba(42,67,113,.15);
+    background-color: #fff;
+    transition: all .3s linear;
+}
+
+.card-3:hover .setting-3{
+    background-color: #FFEBE6;
+    box-shadow: none;
+}
+
+/* card-4 */
+.setting-4{
+    color: #FF9C27;
+    padding: 17px;
+    box-shadow: 8px 8px 30px 0px #FFE2C3;
+    border-radius: 50%;
+    border: none;
+    width: 70px;
+    height: 70px;
+    margin: 25px 0px;
+    background-color: #fff;
+}
+
+.card-4{
+    padding: 25px 20px 40px 20px;
+    background-color: #FFF3E9;  
+    border-radius: 20px;  
+}
+
+.card-4:hover{
+    box-shadow: 8px 8px 30px 0px rgba(42,67,113,.15);
+    background-color: #fff;
+    transition: all .3s linear;
+}
+
+.card-4:hover .setting-4{
+    background-color: #FFF3E9;
+    box-shadow: none;
+}
+
+.p-c{
+    color: #606060;
+}
+
+.Download-Brochure{
+    box-shadow: 8px 8px 18px 0px rgba(254,76,28,.3);
+        background: #fe4c1c;
+        transition: all .2s ease-out;
+        padding: 10px 60px 10px 20px;
+        line-height: 1;
+        vertical-align: middle;
+        font-weight: bold;
+        border: 1px solid transparent;
+        color: #fff;
+        border-radius: 50px;
+        position: relative;
+}
+
+.Download-Brochure:hover{
+    box-shadow: none;
+     transition: all .2s ease-out;
+}
+
+.r-arrow{
+    background: #fff;
+    color: #fe4c1c;
+    padding: 13px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 14px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    transition: all .3s linear;
+}
+
+.me{
+    margin-bottom: 150px;
+}
+
+
+.c-color{
+    color: #0160E7;
+    padding: 48px 0px 35px 40px;
+    box-shadow:  8px 8px 30px 0px rgba(42,67,113,.15);
+     transition: all .3s linear;
+    border: none;
+    border-radius: 15px;
+    width: 90%;
+    overflow: hidden;
+}
+
+.c-color:hover{
+   box-shadow: none;
+   background-color: #F0F6FF;
+}
+
+.c-number{
+    color: #F0F6FF; 
+    bottom: -30px; 
+    right: 20px;
+}
+
+.c-color:hover .c-number{
+    color: #fff;
+}
+
+.c-icon{
+    font-size: 50px;
+}
+
+/* .course-bg{
+    background-image: url('bg-shape2-home5.png');
+    background-repeat: no-repeat;
+    background-position: 60% 45px;
+} */
+
+
+
+.c-1{
+    top: 0;
+    left: 20%;
+}
+
+.c-2{
+    bottom: 35%;
+    left: 5%;
+}
+
+.c-3{
+    bottom: 0;
+    left: 20%;
+}
+
+.c-4{
+    top: 0%;
+    right: 20%;
+}
+
+.c-5{
+    right: 5%;
+    bottom: 35%;  
+}
+
+.c-6{
+    right: 20%;
+    bottom: 0%;
+}
+
+.background{
+    background-image: url("bg-progress-home5.png");
+    background-color: #0049B1;
+    color: #ffff;
+    padding: 100px 0;
+    margin-top: 40px;
+    margin-bottom: 150px;
+}
+
+.btn1,.btn2{
+    padding: 14px 28px;
+    border: none;
+    border-radius: 28px;
+    color: #A5B7D2;
+    background-color: #FFFFFF;
+    transition: all .3s ease-out;
+}
+
+.btn2:hover,.btn1:hover{
+    background-color: #00C3FF;
+    color: #FFFFFF;
+    box-shadow: 8px 8px 18px 0px rgba(0,195,255,.3)
+    
+}
+
+.btns{
+    border: 1px solid #d2dbe8;
+    padding: 4px;
+    border-radius: 28px;
+    width: 467px;
+}
+
+.bg-img{
+    background-image: url('bg-bottom-home5.webp');
+    padding: 300px 0;
+}
+
+.heading{
+    line-height: 72px;
+    font-size: 48px;
+}
+
+.icon-play{
+    color: #ffffff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0160E7;
+    font-size: 23px;
+    padding-top: 20px;
+    padding-left: 3px;
+}
+
+.bg-color{
+    background-image:  linear-gradient(90deg, #FF403E 0%, #FF811B 100%);
+}
+
+.input{
+    border-radius: 33px;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.btn-po{
+    top:5px;
+    right: 5px;
+    position: absolute;
+}
+
+.master-li{
+    list-style-type: none;
+}
+
+.master-a{
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+.bg-footer{
+      background-image:  linear-gradient(90deg, #002CAE 0%, #04A6E9 100%);   
+}
+
+.bg-img{
+    background-image: url('img/bg-page-header.webp');
+    padding: 150px 0;
+}
+
+.text-c{
+    color: #9EE8FF;
+}
+
+.course-a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.icon-1{
+    padding: 9px;
+    background-color: #FFFFFF;
+    color: #2255EE;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+.icon-2{
+    padding:9px;
+    background-color: #FFFFFF;
+    color: #FF970F;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+.icon-3{
+    padding: 9px;
+    background-color: #FFFFFF;
+    color: #FF0000;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+.icon-4{
+    padding: 9px;
+    background-color: #FFFFFF;
+    color: #3292FF;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+.icon-5{
+    padding: 9px;
+    background-color: #FFFFFF;
+    color: #4CCEF9;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+.footer-hover:hover{
+    text-decoration:underline;
+}
+
+.footer-icon-hover:hover{
+     transform: translate(0,-5px);
+    transition-duration: .2s;  
+    transition-timing-function: all; 
+}
+.what{
+    position: fixed;
+    font-size: 40px;
+    bottom: 15px;
+    right: 15px;
+    background-color: #25d366;
+    box-shadow: 0px 0px 11px rgba(0,0,0,.5);
+    color: #FFFFFF;
+    padding: 14px;
+    border-radius: 50%;
+}
+
+
+/* hardik  */
+
+
+   /* <div class="row mt-4">
+            <div class="col-xl-2 col-sm-6">
+                <div class="ms-xl-4">
+                    <a href="#" class="navbar-brand">
+                        <img src="img/simba.png" alt="logo" width="145px">
+                    </a>
+                </div>
+            </div>
+             <div class="col-xl-8 offcanvas-xl offcanvas-end" tabindex="-1" id="offcanvasRight">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasRight" aria-label="Close"></button>
+                  </div>
+                <div class="pt-2 offcanvas-body justify-content-center">
+                    <ul class="nav d-flex d-sm-block d-xl-flex">
+                        <li class="nav-item"><a href="#" class="nav-link link-info text-dark fw-bold menu">Home</a></li>
+                        <li class="nav-item dropdown drop1"><a href="#"
+                                class="nav-link link-info text-dark fw-bold dropdown-toggle menu mb-2"
+                                data-bs-toggle="dropdown">Master Course</a>
+                            <ul class="dropdown-menu drop2">
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Master in Web Design</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Master in Android</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Master in Full Stack Developer</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Master in Full Digital
+                                        Marketing</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Master in Full Graphic Design</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Master in Full Cyber Security</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Master in Full Data Science</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Master in Full Web Development</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Master in Full Social Media
+                                        Marketing</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Master in Full Python</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Master in Full React JS</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Master in Full Node JS</a></li>
+                            </ul>
+                        </li>
+
+                        <!--<li class="nav-item dropdown"><a href="#"class="nav-link link-info text-dark fw-bold dropdown-toggle menu mb-2" data-bs-toggle="dropdown" data-bs-auto-close="outside">Course</a>
+                            <ul class="dropdown-menu pe-5">
+                                <li class="dropdown"><a class="dropdown-item fw-semibold dropdown-toggle hover-nav"data-bs-toggle="dropdown" href="#">Programming</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a
+                                                class="dropdown-item fw-semibold hover-nav"
+                                                href="#">bootstrap</a></li>
+                                        <li><a
+                                                class="dropdown-item fw-semibold hover-nav"
+                                                href="#">C Language</a></li>
+                                        <li><a
+                                                class="dropdown-item fw-semibold hover-nav"
+                                                href="#">C++ Language</a></li>
+                                        <li><a
+                                                class="dropdown-item fw-semibold hover-nav"
+                                                href="#">HTML & HTML5</a></li>
+                                        <li><a
+                                                class="dropdown-item fw-semibold hover-nav"
+                                                href="#">JAVA</a></li>
+                                        <li><a
+                                                class="dropdown-item fw-semibold hover-nav"
+                                                href="#">PHP</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a
+                                        class="dropdown-item fw-semibold dropdown-toggle hover-nav"
+                                        data-bs-toggle="dropdown" href="#">Designing</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a
+                                                class="dropdown-item fw-semibold hover-nav"
+                                                href="#">Adobe Photoshop</a></li>
+                                        <li><a
+                                                class="dropdown-item fw-semibold hover-nav"
+                                                href="#">Adobe illustrator</a></li>
+                                        <li><a
+                                                class="dropdown-item fw-semibold hover-nav"
+                                                href="#">Video Editing</a></li>
+                                        <li><a
+                                                class="dropdown-item fw-semibold hover-nav"
+                                                href="#">UI/UX Design</a></li>
+                                    </ul>
+                                </li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Ethical Hacking</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Amazon AWS</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">IOS Training</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">SEO Cource</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Flutter Training</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Cloud Computing</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Facebook Ads</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Google Ads</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Data Analytics</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">AR VR Development</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Machine Learning Course</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Artificial Intelligence (AI)</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#"
+                                class="nav-link link-info text-dark fw-bold menu hover-nav">Placement</a></li>
+                        <li class="nav-item"><a href="blog.html"
+                                class="nav-link link-info text-dark fw-bold menu hover-nav">Blog</a></li>
+                        <li class="nav-item dropdown drop1"><a href="#"
+                                class="nav-link link-info text-dark fw-bold menu hover-nav dropdown-toggle mb-1"
+                                data-bs-toggle="dropdown">About Us</a>
+                            <ul class="dropdown-menu drop2">
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Our Activity</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">Professional Team</a></li>
+                                <li><a
+                                        class="dropdown-item fw-semibold hover-nav"
+                                        href="#">FAQs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="contact us.html"
+                                class="nav-link link-info text-dark fw-bold menu hover-nav">Contact
+                                Us
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-6 pt-2">
+                <div class="d-none d-xl-block ">
+                    <button
+                        class="py-2 px-4 rounded-pill info-bg button-1 text-light border-0">Contact
+                        Us</button>
+                </div>
+                <div class="d-block d-xl-none d-flex justify-content-end">
+                    <i class="fa-solid fa-bars fw-bold menu-bg rounded-circle"
+                        type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight"></i> 
+                </div>
+            </div><i class="icofont-navigation-menu "></i>
+        </div>*/
+/*  kusi*/
+
+/*<div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img  src="img/simba.png" style="width:150px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                        <ul class="navbar-nav d-flex justify-content-center">
+                            <li class="nav-item p-2"><a href="#" class="nav-link">home</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle p-3" href="#" id="drop" data-bs-toggle="dropdown">master course</a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item  fw-semibold hover-nav text-hover">Master In Android<a></li>
+                                    <li><a href="#" class="dropdown-item  fw-semibold hover-nav">Master In full stack devloper</a></li>
+                                    <li><a href="#" class="dropdown-item  fw-semibold hover-nav">Master In Web Design</a></li>
+                                    <li><a href="#" class="dropdown-item  fw-semibold hover-nav">Master In digital marketing</a></li>
+                                    <li><a href="#" class="dropdown-item  fw-semibold hover-nav">Master In grapgic design</a></li>
+                                    <li><a href="#" class="dropdown-item  fw-semibold hover-nav">Master In cyber security</a></li>
+                                    <li><a href="#" class="dropdown-item  fw-semibold hover-nav">Master In data science</a></li>
+                                    <li><a href="#" class="dropdown-item  fw-semibold hover-nav">Master In Web devlopment</a></li>
+                                    <li><a href="#" class="dropdown-item  fw-semibold hover-nav">Master In social media marketing</a></li>
+                                    <li><a href="#" class="dropdown-item  fw-semibold hover-nav">Master In python</a></li>
+                                    <li><a href="#" class="dropdown-item  fw-semibold hover-nav">Master In React js </a></li>
+                                    <li><a href="#" class="dropdown-item  fw-semibold hover-nav">Master In Node js</a></li>
+                                </ul>
+
+                            </li>
+
+
+                    
+    
+                            <li class="nav-item dropdown p-2"><a href="#" class="nav-link dropdown-toggle" id="drop1" data-bs-toggle="dropdown">course</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="nav-link">programing</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" class="dropdown-item">bootstrap</a></li>
+                                            <li><a href="#" class="dropdown-item">c language</a></li>
+                                            <li><a href="#" class="dropdown-item">c++ language</a></li>
+                                            <li><a href="#" class="dropdown-item">HTML&HTML5</a></li>
+                                            <li><a href="#" class="dropdown-item">Java</a></li>
+                                            <li><a href="#" class="dropdown-item">php</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">designing</a></li>
+                                    <li><a href="#" class="dropdown-item">Ethical hacking</a></li>
+                                    <li><a href="#" class="dropdown-item">amazon AWS</a></li>
+                                    <li><a href="#" class="dropdown-item">ios training</a></li>
+                                    <li><a href="#" class="dropdown-item">SEO course</a></li>
+                                    <li><a href="#" class="dropdown-item">flutter training</a></li>
+                                    <li><a href="#" class="dropdown-item">cloud computing</a></li>
+                                    <li><a href="#" class="dropdown-item">facebook ADS </a></li>
+                                    <li><a href="#" class="dropdown-item">Google ADS</a></li>
+                                    <li><a href="#" class="dropdown-item">data analysis</a></li>
+                                    <li><a href="#" class="dropdown-item">Ar Vr devlopment</a></li>
+                                    <li><a href="#" class="dropdown-item">machine learning course</a></li>
+                                    <li><a href="#" class="dropdown-item">Artificial inteligents(AI)</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item p-2"><a href="#" class="nav-link">placement</a></li>
+                            <li class="nav-item p-2"><a href="blog.html" class="nav-link">blog</a></li>
+                            <li class="nav-item dropdown p-2">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">about us</a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">our activity</a></li>
+                                    <li><a href="#" class="dropdown-item">profesional team</a></li>
+                                    <li><a href="#" class="dropdown-item">FAQs</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="nav-item p-2 "><a href="contact.html" class="nav-link">contact us</a></li>
+                        </ul>
+
+                    <div class="ms-4">
+                        <button class="btn btn-primary rounded-pill px-4 py-2 d-none d-sm-none d-lg-block d-xl-block"  type="button">contact us</button>
+                    </div>
+                </div>
+            </div>
+            </nav>*/
+
